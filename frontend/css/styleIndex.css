@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+li {
+    list-style: none;
+}
+
+.head {
+    background-image: url(../images/TOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg);
+    background-size:cover;
+    height: 100vh;
+    
+}
+.container {
+   padding-left: 100px;
+   padding-right: 100px; 
+}
+.head .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   min-height: 70px;
+}
+.head ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+@media (max-width:968px) {
+    .head ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+    .head ul li a,
+    .head ul li button {
+        margin-left: 100px;
+    }
+    .head .fa-solid:hover + ul {
+        display: flex;
+    }
+    .head .container,
+    .head ul {
+        background-color: black;
+    }
+}
+.head .logo {
+    width: fit-content;
+    font-size: 30px;
+}
+.head ul li {
+    
+    padding: 10px 6px;
+}
+.head  a {
+    text-decoration: none;
+    color: white;
+}
+
+.head ul li button {
+    background-color: #ffa323;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 6px;
+    cursor: pointer;
+}
+
+.head ul li:not(:last-child) a:hover {
+    color: #ffa323;
+}
+.head ul li:first-child a {
+    color: #ffa323;
+}
+.fa-solid  {
+    color: white;
+        font-size: 25px;
+    }
+
+@media (min-width: 968px) {
+    .head  .fa-bars {
+        display: none;
+    }
+}
+
+.head .change-background {
+    position: absolute;
+    top: 60%;
+    color: white;
+}
+
+.head .fa-chevron-left {
+    left: 30px;
+}
+
+.head .fa-chevron-right {
+    right: 30px;
+}
+
+.head .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    bottom: 30px;
+}
+.head .bullets li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border:2px solid white;
+    margin-left: 10px;
+}
+.head .bullets   .active {
+    background-color: #ffa323;
+    border-color: #ffa323;
+}
+
+
