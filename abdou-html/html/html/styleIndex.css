@@ -1,3 +1,15 @@
+/*  start reveal element when scroll */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.3s ease;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+/*  start reveal element when scroll */
 
 @import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
@@ -712,7 +724,7 @@ header{
     border-radius: 5px;
     padding: 30px 20px;
     margin: 20px;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .menu1-container-col-item:hover{
     background-color: #7E6845;
@@ -737,6 +749,21 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.menu1-container-col-item-description  p {
+    position: absolute;
+    bottom: -100%;
+    transition: 0.5s;
+    color: white;
+}
+.menu1-container-col-item:hover {
+    transform: rotate(3deg) scale(1.1);
+    color: white;
+}
+.menu1-container-col-item:hover p{
+bottom: 0;
 }
 .menu1-container-col-item-price{
     padding-top: 12px ; 

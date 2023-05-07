@@ -1,3 +1,21 @@
+// start scroll animation
+window.addEventListener('scroll', reveal);
+
+  
+
+function reveal() {
+  var reveals =document.querySelectorAll('.reveal');
+  for(var i=0; i < reveals.length; i++) {
+    var windowheight=window.innerHeight;
+    var revealtop= reveals[i].getBoundingClientRect().top;
+    var revealpoint=30;
+    if(revealtop<windowheight-revealpoint) {
+      reveals[i].classList.add('active');
+    }
+  }
+}
+// end scroll animation
+
 
 
 var co = 1 ; 
@@ -114,5 +132,7 @@ function showDrinks(){
   document.getElementById('menu1-col5').style.display = "none" ;
   document.getElementById('menu1-col4').style.display = "none" ;
 }
+
+
 
 
