@@ -1,0 +1,166 @@
+
+body{
+   
+    background-image: linear-gradient(to bottom right, white, #72a3b1);
+}
+.header-container {
+    background-color: black;
+}
+
+.cart-title{
+    width: 100%;
+    height: 100%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: solid 1px gray;
+    padding-bottom: 20px;
+}
+
+#cart-title-svg {
+    width: 52px;
+    height: 52px;
+}
+
+.cart-container {
+    width: 100%;
+    height: 100%; 
+    display: flex; 
+    justify-content: flex-start;
+    
+}
+.cart-item-list {
+    margin-top: 20px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-bottom: solid 1px grey;
+    border-top: solid 1px grey;
+}
+
+.cart-item-img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    width: 150px;
+}
+.cart-item-img img {
+    max-width: 200%;
+    max-height: 200%;
+}
+.cart-item-description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.cart-item-description span {
+    margin-top: 10px;
+}
+
+.cart-item-quantity  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cart-item-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.cart-summary {
+    width: 30%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    
+}
+.cart-summary-title {
+    text-align: center;
+    font-size: 1.7em;
+    width: 100%;
+
+}
+.cart-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.cart-div span{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.order-cart {
+    justify-content: center;
+}
+.order-now {
+    width: 60%;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #7E6845;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.order-now:hover{
+    background-color: black;
+    font-size: 24px;
+    
+}
+
+#quantity-select {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px ;
+    outline: none;
+    border: solid 1px black;
+    transition: .3s;
+    padding: 5px;
+
+}
+#quantity-select:focus {
+    border: solid 1px #7E6845;
+}
+
+
+.forum-container-col {
+    margin-bottom: 20px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    border-right: solid 1px gray ;
+}
