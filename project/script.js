@@ -161,8 +161,11 @@ document.getElementById('nav6').addEventListener('click', function(event) {
 function continueShopping() {
   document.getElementById('continue-shopping--').innerHTML = "Continue shopping" ;
   document.getElementById('confirmation-svg').style.display = "unset" ; 
- 
+  document.getElementById('title').innerHTML = "Your order has been received" ;
+  document.getElementById('p--').innerHTML = "Thank you for your purchase !" ;
   document.getElementById('confirmation-svg2').style.display = "none" ; 
+  document.getElementById('span--').style.display = "unset" ;
+  
   setTimeout(function() {
     document.getElementById('continue-shopping--').href = "index.html" ;
   }, 5); 
