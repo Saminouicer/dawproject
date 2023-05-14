@@ -26,7 +26,12 @@ main{
     margin-top: 20px;
 }
 .confirmation-svg{
+    
     margin-top: 20px;
+}
+
+#confirmation-svg {
+    display: none;
 }
 
 

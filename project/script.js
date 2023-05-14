@@ -158,3 +158,14 @@ document.getElementById('nav6').addEventListener('click', function(event) {
 });
 
 
+function continueShopping() {
+  document.getElementById('continue-shopping--').innerHTML = "Continue shopping" ;
+  document.getElementById('confirmation-svg').style.display = "unset" ; 
+ 
+  document.getElementById('confirmation-svg2').style.display = "none" ; 
+  setTimeout(function() {
+    document.getElementById('continue-shopping--').href = "index.html" ;
+  }, 5); 
+    
+
+}
