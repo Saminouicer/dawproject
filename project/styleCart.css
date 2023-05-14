@@ -164,3 +164,60 @@ body{
     height: 100%;
     border-right: solid 1px gray ;
 }
+
+
+@media screen and (max-width:900px ){
+    .cart-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-container {
+        width: 100%;
+    }
+    .forum-container-col-item{
+        width: 80%;
+    }
+    .forum-container-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+    .forum-container-col input {
+        width: 100%;
+    }
+    #select-forum{
+        width: 30%;
+    }
+    .cart-summary {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cart-div {
+        width: 76%;
+
+    }
+}
+@media screen and (max-width:700px ) {
+    .cart-item-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .cart-item-list div {
+        margin-bottom: 20px;
+    }
+    .cart-item-list h3 {
+        border-bottom : solid 1px gray ;
+        
+    }
+}
